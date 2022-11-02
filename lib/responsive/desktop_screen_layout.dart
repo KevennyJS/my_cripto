@@ -16,14 +16,12 @@ class _DesktopScreenLayoutState extends State<DesktopScreenLayout> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     pageController = PageController();
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     pageController.dispose();
   }
@@ -42,15 +40,15 @@ class _DesktopScreenLayoutState extends State<DesktopScreenLayout> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: mobileBackgroundColor,
+        backgroundColor: primaryBackground,
         centerTitle: false,
         title: const Icon(Icons.view_in_ar, color: Colors.purple),
         actions: [
-          IconButton(onPressed: () => navigationTapped(0), icon: Icon(Icons.home, color: _page == 0 ? primaryColor : secondaryColor)),
-          IconButton(onPressed: () => navigationTapped(1), icon: Icon(Icons.search, color: _page == 1 ? primaryColor : secondaryColor)),
-          IconButton(onPressed: () => navigationTapped(2), icon: Icon(Icons.messenger_outlined, color: _page == 2 ? primaryColor : secondaryColor)),
-          IconButton(onPressed: () => navigationTapped(3), icon: Icon(Icons.favorite, color: _page == 3 ? primaryColor : secondaryColor)),
-          IconButton(onPressed: () => navigationTapped(4), icon: Icon(Icons.person, color: _page == 4 ? primaryColor : secondaryColor)),
+          IconButton(onPressed: () => navigationTapped(0), icon: Icon(Icons.home, color: _page == 0 ? primary : secondary)),
+          IconButton(onPressed: () => navigationTapped(1), icon: Icon(Icons.view_in_ar, color: _page == 1 ? primary : secondary)),
+          IconButton(onPressed: () => navigationTapped(2), icon: Icon(Icons.battery_charging_full, color: _page == 2 ? primary : secondary)),
+          IconButton(onPressed: () => navigationTapped(3), icon: Icon(Icons.account_balance_wallet, color: _page == 3 ? primary : secondary)),
+          IconButton(onPressed: () => navigationTapped(4), icon: Icon(Icons.support, color: _page == 4 ? primary : secondary)),
         ],
       ),
       body: PageView(
