@@ -18,5 +18,6 @@ const lineColor = Color(0xFF22282F);
 const TextStyle title1 = TextStyle(color: primaryText, fontSize: 24, fontWeight: FontWeight.w600);
 const TextStyle title2 = TextStyle(color: primaryText, fontSize: 20, fontWeight: FontWeight.w600);
 const TextStyle title3 = TextStyle(color: primaryText, fontSize: 18, fontWeight: FontWeight.w600);
+const TextStyle subtitle1 = TextStyle(color: primaryText, fontSize: 16, fontWeight: FontWeight.w600);
 const TextStyle bodyText1 = TextStyle(color: primaryText, fontSize: 16, fontWeight: FontWeight.w600);
 const TextStyle bodyText2 = TextStyle(color: secondaryText, fontSize: 14, fontWeight: FontWeight.w600);
