@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../util/colors.dart';
 
-Widget CriptoCard({Key? key, required List<Color> gradientColors, required String image, required String name, required String price}) {
+Widget criptoCard({Key? key, required List<Color> gradientColors, required String image, required String name, required String price}) {
   return Padding(
     padding: const EdgeInsetsDirectional.fromSTEB(8, 20, 8, 20),
     child: Container(

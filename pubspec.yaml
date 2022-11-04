@@ -27,6 +27,8 @@ dependencies:
   # Icon package
   font_awesome_flutter: ^10.2.1
 
+  # Widgets
+  percent_indicator: ^4.2.2
 
 dev_dependencies:
   flutter_test:
