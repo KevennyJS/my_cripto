@@ -5,6 +5,7 @@ import 'package:my_cripto/responsive/desktop_screen_layout.dart';
 import 'package:my_cripto/responsive/mobile_screen_layout.dart';
 import 'package:my_cripto/responsive/responsive_layout_screen.dart';
 import 'package:my_cripto/screens/login_screen.dart';
+import 'package:my_cripto/util/colors.dart';
 import 'package:provider/provider.dart';
 
 import 'providers/user_provider.dart';
@@ -37,9 +38,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'My Cripto',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
+        darkTheme: ThemeData.dark().copyWith(
+          backgroundColor: primaryBackground,scaffoldBackgroundColor: primaryBackground
         ),
+        themeMode: ThemeMode.dark,
         home: StreamBuilder(
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
