@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:my_cripto/responsive/desktop_screen_layout.dart';
 import 'package:my_cripto/responsive/mobile_screen_layout.dart';
 import 'package:my_cripto/responsive/responsive_layout_screen.dart';
-import 'package:my_cripto/screens/login_screen.dart';
 import 'package:my_cripto/util/colors.dart';
 import 'package:provider/provider.dart';
 
@@ -64,7 +63,11 @@ class MyApp extends StatelessWidget {
                 ),
               );
             }
-            return const LoginScreen();
+            // return const LoginScreen();
+            return const ResponsiveLayout(
+              desktopScreenLayout: DesktopScreenLayout(),
+              mobileScreenLayout: MobileScreenLayout(),
+            );
           },
         ),
       ),
