@@ -26,60 +26,62 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 topBar(title: "My Cripto", description: "Seu portfólio de criptomoedas"),
                 spacer(),
-                spacer(),
-                Column(
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('Olá, seja bem vindo', style: title2),
-                    SizedBox(
-                      height: 300,
-                      child: DefaultTabController(
-                        length: 3,
-                        initialIndex: 0,
-                        child: Column(
-                          children: [
-                            const TabBar(
-                              labelColor: primaryText,
-                              unselectedLabelColor: secondaryText,
-                              labelStyle: bodyText1,
-                              indicatorColor: primaryText,
-                              indicatorWeight: 1,
-                              tabs: [
-                                Tab(text: 'Bitcoin'),
-                                Tab(text: 'ETH'),
-                                Tab(text: 'USDT'),
-                              ],
-                            ),
-                            Expanded(
-                              child: TabBarView(
-                                children: [
-                                  criptoCard(
-                                    name: 'Bitcoin',
-                                    price: 'R\$ 50.000,00',
-                                    image: 'https://cdn-icons-png.flaticon.com/512/5968/5968260.png',
-                                    gradientColors: const [Color(0xFF00F2FE), Color(0xFF4FACFE)],
-                                  ),
-                                  criptoCard(
-                                    name: 'ETH',
-                                    price: 'R\$ 2.000,00',
-                                    image: 'https://cdn-icons-png.flaticon.com/512/7016/7016523.png',
-                                    gradientColors: [primary, secondary],
-                                  ),
-                                  criptoCard(
-                                    name: 'USDT',
-                                    price: 'R\$ 1.000,00',
-                                    image: 'https://cryptologos.cc/logos/tether-usdt-logo.png',
-                                    gradientColors: const [Color(0xFFFF5858), Color(0xFFD43F8D)],
-                                  ),
+                Padding(
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text('Olá, seja bem vindo', style: title2),
+                      SizedBox(
+                        height: 300,
+                        child: DefaultTabController(
+                          length: 3,
+                          initialIndex: 0,
+                          child: Column(
+                            children: [
+                              const TabBar(
+                                labelColor: primaryText,
+                                unselectedLabelColor: secondaryText,
+                                labelStyle: bodyText1,
+                                indicatorColor: primaryText,
+                                indicatorWeight: 1,
+                                tabs: [
+                                  Tab(text: 'Bitcoin'),
+                                  Tab(text: 'ETH'),
+                                  Tab(text: 'USDT'),
                                 ],
                               ),
-                            ),
-                          ],
+                              Expanded(
+                                child: TabBarView(
+                                  children: [
+                                    criptoCard(
+                                      name: 'Bitcoin',
+                                      price: 'R\$ 50.000,00',
+                                      image: 'https://cdn-icons-png.flaticon.com/512/5968/5968260.png',
+                                      gradientColors: const [Color(0xFF00F2FE), Color(0xFF4FACFE)],
+                                    ),
+                                    criptoCard(
+                                      name: 'ETH',
+                                      price: 'R\$ 2.000,00',
+                                      image: 'https://cdn-icons-png.flaticon.com/512/7016/7016523.png',
+                                      gradientColors: [primary, secondary],
+                                    ),
+                                    criptoCard(
+                                      name: 'USDT',
+                                      price: 'R\$ 1.000,00',
+                                      image: 'https://cryptologos.cc/logos/tether-usdt-logo.png',
+                                      gradientColors: const [Color(0xFFFF5858), Color(0xFFD43F8D)],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 topBar(
                   title: "Transações recentes",

@@ -5,10 +5,10 @@ const primaryBackground = Color(0xFF101213);
 const secondaryBackground = Color(0xFF1A1F24);
 
 const primary = Color(0xFF8377F3);
-const secondary = Color(0xFF5CC1B4);
+const secondary = Color(0xFF919191);
 
 const primaryText = Color(0xFFFFFFFF);
-const secondaryText = Color(0xFF95A1AC);
+const secondaryText = Color(0xFF919191);
 
 const primaryBtnText = Color(0xFFFFFFFF);
 const lineColor = Color(0xFF22282F);
